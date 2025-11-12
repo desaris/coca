@@ -1,3 +1,8 @@
-body {
-    background: gray;
+@import './mixins';
+
+header {
+    @include flex-justify-between;
+    @include small-desktop {
+        color: red;
+    }
 }
