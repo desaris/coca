@@ -12,6 +12,7 @@ dist
 dist-ssr
 *.local
 
+
 .prettierrc.json
 .stylelintrc.json
 eslint.config.js
