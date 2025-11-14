@@ -1,8 +1,4 @@
 @import './mixins';
+@import './base';
+@import './globals';
 
-header {
-    @include flex-justify-between;
-    @include small-desktop {
-        color: red;
-    }
-}
