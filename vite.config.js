@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 import injectHTML from 'vite-plugin-html-inject';
-import htmlMinifier from 'vite-plugin-html-minifier'
+import htmlMinifier from 'vite-plugin-html-minifier';
 
 export default defineConfig(() => {
     return {
