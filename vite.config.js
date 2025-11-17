@@ -5,6 +5,7 @@ import htmlMinifier from 'vite-plugin-html-minifier';
 
 export default defineConfig(() => {
     return {
+        publicDir: './src/assets',
         plugins: [
             injectHTML(),
             htmlMinifier({
