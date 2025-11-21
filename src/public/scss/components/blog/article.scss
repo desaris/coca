@@ -1,0 +1,120 @@
+.article {
+    padding: 24px 0 80px;
+
+    &__row {
+        @include flex-justify-between;
+        align-items: end;
+        padding: 32px 0 24px;
+    }
+
+    &__author {
+        @include small-tablet {
+            flex-direction: column;
+            align-items: start;
+        }
+
+        @include flex-all-between;
+        gap: 24px;
+        align-items: end;
+
+        &-avatar {
+            max-width: 56px;
+            max-height: 56px;
+        }
+
+        &-about {
+            @include flex-column;
+            gap: 10px;
+
+            &-name {
+                font-weight: 600;
+                color: var(--neutral-color-100);
+            }
+
+            &-position {
+                font-weight: 500;
+                color: var(--neutral-color-150);
+            }
+        }
+    }
+
+    &__image {
+        padding-bottom: 80px;
+        width: 100%;
+        max-height: 545px;
+        object-fit: cover;
+    }
+
+    &__time {
+        color: var(--neutral-color-150);
+
+        @include small-tablet {
+            font-size: 14px;
+        }
+    }
+
+    &__description {
+        padding-bottom: 56px;
+
+        &-text {
+            line-height: 32px;
+            color: var(--neutral-color-100);
+
+            @include mobile {
+                font-size: 14px;
+            }
+        }
+
+        &-heading {
+            padding-bottom: 24px;
+        }
+    }
+
+    &__created {
+        display: flex;
+        gap: 48px;
+        max-width: 825px;
+
+        &-by {
+            color: var(--neutral-color-150);
+        }
+
+        &-position {
+            color: var(--neutral-color-150);
+        }
+
+        &-descr {
+            line-height: 32px;
+            color: var(--neutral-color-100);
+
+            @include mobile {
+                font-size: 14px;
+            }
+        }
+
+        &-column {
+            @include flex-column;
+            gap: 24px;
+        }
+
+        &-img {
+            max-width: 200px;
+            max-height: 200px;
+        }
+
+        @include small-tablet {
+            @include flex-column;
+        }
+    }
+
+    &__socials {
+        @include flex-align-center;
+        gap: 32px;
+        margin-bottom: 14px;
+        color: var(--neutral-color-100);
+    }
+}
+
+[data-theme='dark'] svg path {
+    fill: white;
+}

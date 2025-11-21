@@ -1,3 +1,18 @@
 .hero {
     display: flex;
+    padding: 80px 0 48px;
+
+    @include small-tablet {
+        padding: 80px 0 0;
+    }
+
+    &__title {
+        @include tablet {
+            margin-bottom: 60px;
+        }
+
+        @include mobile {
+            margin-bottom: 30px;
+        }
+    }
 }
