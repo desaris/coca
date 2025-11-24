@@ -39,3 +39,9 @@
         @content;
     }
 }
+
+@mixin extra-small-mobile {
+    @media (max-width: 320px) {
+        @content;
+    }
+}
