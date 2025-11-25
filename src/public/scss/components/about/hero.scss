@@ -80,6 +80,7 @@
             height: 100px;
             background: #fff;
             transform: translateY(-30%);
+            pointer-events: none;
 
             @include mini-desktop {
                 left: 50%;
