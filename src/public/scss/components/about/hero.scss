@@ -1,6 +1,10 @@
 .hero {
     padding: 95px 0 128px;
 
+    @include small-tablet {
+        padding: 95px 0 10px;
+    }
+
     &__container {
         position: relative;
         z-index: var(--z-index-3);
