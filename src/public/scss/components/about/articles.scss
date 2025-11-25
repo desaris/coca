@@ -66,6 +66,11 @@
             margin: 24px 0 16px;
         }
 
+        &-subtitle {
+            line-height: 32px;
+            color: var(--neutral-color-150);
+        }
+
         & img {
             @include small-tablet {
                 height: 428px;
@@ -91,10 +96,6 @@
 
     &__slider {
         overflow: visible !important;
-
-        @include small-tablet {
-            height: 613px;
-        }
 
         &::after {
             content: '';
