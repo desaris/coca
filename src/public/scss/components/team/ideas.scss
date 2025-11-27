@@ -1,0 +1,16 @@
+.ideas {
+    &__container {
+        @include flex-justify-between;
+        gap: 24px;
+        flex-wrap: wrap;
+        border-top: 1px solid var(--neutral-color-30);
+        border-bottom: 1px solid var(--neutral-color-30);
+        padding: 85px var(--container-padding);
+    }
+
+    &__subtitle {
+        max-width: 522px;
+        font-weight: 600;
+        line-height: 150%;
+    }
+}
