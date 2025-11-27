@@ -5,7 +5,22 @@ import htmlMinifier from 'vite-plugin-html-minifier';
 
 export default defineConfig(() => {
     return {
+        root: './',
+        base: '/coca/',
         publicDir: './src/assets',
+        build: {
+            outDir: './dist',
+            emptyOutDir: true,
+            rollupOptions: {
+                input: {
+                    main: './index.html',
+                    pricing: './pricing.html',
+                    contact: './contact.html',
+                    about: './about.html',
+                    team: './team.html',
+                },
+            },
+        },
         plugins: [
             injectHTML(),
             htmlMinifier({
