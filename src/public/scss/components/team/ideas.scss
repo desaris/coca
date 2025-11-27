@@ -1,4 +1,7 @@
 .ideas {
+    position: relative;
+    z-index: var(--z-index-3);
+
     &__container {
         @include flex-justify-between;
         gap: 24px;
@@ -6,6 +9,10 @@
         border-top: 1px solid var(--neutral-color-30);
         border-bottom: 1px solid var(--neutral-color-30);
         padding: 85px var(--container-padding);
+    }
+
+    &__title {
+        font-weight: 600;
     }
 
     &__subtitle {
