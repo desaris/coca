@@ -1,9 +1,8 @@
 import Swiper from 'swiper';
 import 'swiper/css';
-import { Navigation } from 'swiper/modules';
 
 export const useHeroSlider = () => {
-    new Swiper('.hero__slider--first', {
+    new Swiper('.hero__slider', {
         slidesPerView: '3',
         watchSlidesVisibility: false,
         spaceBetween: 32,
@@ -28,13 +27,8 @@ export const useHeroSlider = () => {
     });
 };
 
-export const useArticlesSlider = () => {
-    new Swiper('.articles__slider', {
-        modules: [Navigation],
-        navigation: {
-            nextEl: '.articles__btn--next',
-            prevEl: '.articles__btn--prev',
-        },
+export const useAboutSlider = () => {
+    new Swiper('.about__slider', {
         slidesPerView: '3',
         watchSlidesVisibility: false,
         spaceBetween: 32,
@@ -46,13 +40,13 @@ export const useArticlesSlider = () => {
                 loop: true,
             },
 
-            769: {
+            620: {
                 slidesPerView: '2',
                 loop: true,
             },
 
             1025: {
-                slidesPerView: 'auto',
+                slidesPerView: '3',
                 loop: true,
             },
         },

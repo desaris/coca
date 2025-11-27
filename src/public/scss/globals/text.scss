@@ -112,7 +112,7 @@
                 transform: translateY(-43px);
 
                 @include mobile {
-                    min-width: 24px;
+                    display: none;
                 }
             }
         }
