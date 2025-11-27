@@ -119,10 +119,18 @@
 
         &-large {
             font-size: 24px;
+
+            @include mobile {
+                font-size: 18px;
+            }
         }
 
         &-medium {
             font-size: 18px;
+
+            @include mobile {
+                font-size: 16px;
+            }
         }
 
         &-default {
