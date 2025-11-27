@@ -1,0 +1,117 @@
+.about {
+    z-index: var(--z-index-3);
+    padding: 160px 0;
+
+    @include mobile {
+        padding: 60px 0;
+    }
+
+    &__title {
+        font-weight: 600;
+    }
+
+    &__subtitle {
+        margin-top: 24px;
+        max-width: 534px;
+        font-weight: 500;
+        line-height: 32px;
+        color: var(--neutral-color-150);
+    }
+
+    &__slider {
+        position: relative;
+        z-index: var(--z-index-4) !important;
+        margin-top: 80px;
+
+        @include mobile {
+            margin-top: 60px;
+        }
+
+        &-btns {
+            position: absolute;
+            top: 50%;
+            left: 29.5%;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100%;
+            width: 80px;
+            height: 80px;
+            background: #fff;
+            transform: translateY(-100%);
+            pointer-events: none;
+
+            @include mini-desktop {
+                left: 50%;
+                transform: translateX(-50%) translateY(-100%);
+            }
+        }
+    }
+
+    &__slide {
+        &-title {
+            font-weight: 600;
+        }
+
+        &-img {
+            height: 434px;
+
+            @include mobile {
+                height: 342px;
+            }
+        }
+
+        &-header {
+            margin: 16px 0 8px;
+
+            @include flex-all-between;
+        }
+
+        &-position {
+            font-weight: 500;
+            font-size: 18px;
+            color: var(--neutral-color-150);
+        }
+
+        [data-theme='dark'] &-social svg path {
+            fill: #fff;
+        }
+    }
+
+    &__content {
+        gap: 24px;
+        margin-top: 100px;
+
+        @include flex-justify-between;
+
+        @include mini-desktop {
+            flex-wrap: wrap;
+        }
+
+        @include mobile {
+            margin-top: 60px;
+        }
+    }
+
+    &__details {
+        max-width: 506px;
+
+        &-description {
+            margin-bottom: 24px;
+            font-weight: 500;
+            line-height: 32px;
+            color: var(--neutral-color-150);
+        }
+
+        &-button {
+            font-weight: 600;
+            color: var(--neutral-color-100);
+            transition: 0.3s;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+}
